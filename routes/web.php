@@ -28,3 +28,7 @@ Route::get('/service', function () {
 Route::get('/partner', function () {
     return view('interface.partner');
 });
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
