@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -27,6 +28,26 @@ Route::get('/service', function () {
 
 Route::get('/partner', function () {
     return view('interface.partner');
+});
+
+Route::get('/galery', function () {
+    return view('interface.galery');
+});
+
+Route::get('/article', function () {
+    return view('interface.article');
+});
+
+Route::get('/jurnal', function () {
+    return view('interface.jurnal');
+});
+
+Route::get('/segment', function () {
+    return view('interface.segment');
+});
+
+Route::get('/contact', function () {
+    return view('interface.contact');
 });
 
 Auth::routes();

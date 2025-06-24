@@ -36,7 +36,7 @@
                             consectetur adipisicing elit, sed eiusmod tempor incididunt labore dolore magna aliqua enim minim veniam quis
                             nostrud.</p>
                         <div class="author-title">
-                            <div class="thumb"><img src="img/about-author.png" alt=""></div>
+                            <div class="thumb"><img src="{{ asset('interface/img/about-author.png')}}" alt=""></div>
                             <div class="a-desc">
                                 <h6>Marvel Maison</h6>
                                 <p>Chief Executive, Amazon</p>
@@ -50,14 +50,14 @@
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <div class="left-image">
-                                    <div class="s-img"><img class="img-fluid" src="img/service/service4.jpg" alt=""></div>
-                                    <div class="s-img"><img class="img-fluid" src="img/service/service5.jpg" alt=""></div>
+                                    <div class="s-img"><img class="img-fluid" src="{{ asset('interface/img/service/service4.jpg')}}" alt=""></div>
+                                    <div class="s-img"><img class="img-fluid" src="{{ asset('interface/img/service/service5.jpg')}}" alt=""></div>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <div class="right-image">
-                                <div class="s-img"><img class="img-fluid" src="img/service/service6.jpg" alt=""></div>
-                                <div class="s-img"><img class="img-fluid" src="img/service/service7.jpg" alt=""></div>
+                                <div class="s-img"><img class="img-fluid" src="{{ asset('interface/img/service/service6.jpg')}}" alt=""></div>
+                                <div class="s-img"><img class="img-fluid" src="{{ asset('interface/img/service/service7.jpg')}}" alt=""></div>
                             </div>
                         </div>
                     </div>
@@ -85,7 +85,7 @@
             <div class="col-lg-4 col-md-4 col-sm-6">
                 <div class="single-service">
                     <div class="service-thumb">
-                        <img class="img-fluid" src="img/service/service1.jpg" alt="">
+                        <img class="img-fluid" src="{{ asset('interface/img/service/service1.jpg')}}" alt="">
                     </div>
                     <div class="service-details">
                         <h5><a href="#">Get to Know Project Estimate?</a></h5>
@@ -98,7 +98,7 @@
             <div class="col-lg-4 col-md-4 col-sm-6">
                 <div class="single-service">
                     <div class="service-thumb">
-                        <img class="img-fluid" src="img/service/service2.jpg" alt="">
+                        <img class="img-fluid" src="{{ asset('interface/img/service/service2.jpg')}}" alt="">
                     </div>
                     <div class="service-details">
                         <h5><a href="#">Get to Know Project Estimate?</a></h5>
@@ -111,7 +111,7 @@
             <div class="col-lg-4 col-md-4 col-sm-6">
                 <div class="single-service">
                     <div class="service-thumb">
-                        <img class="img-fluid" src="img/service/service3.jpg" alt="">
+                        <img class="img-fluid" src="{{ asset('interface/img/service/service3.jpg')}}" alt="">
                     </div>
                     <div class="service-details">
                         <h5><a href="#">Get to Know Project Estimate?</a></h5>

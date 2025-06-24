@@ -10,7 +10,7 @@
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="{{ asset('interface/css/bootstrap.css')}}">
 	<link rel="stylesheet" href="{{ asset('interface/vendors/linericon/style.css')}}">
-	<link rel="stylesheet" href="{{ asset('interface/css/font-awesome.min.css')}}">
+	<link rel="stylesheet" href="{{ asset('interface/css/font-awesome/css/all.min.css')}}">
 	<link rel="stylesheet" href="{{ asset('interface/css/magnific-popup.css')}}">
 	<link rel="stylesheet" href="{{ asset('interface/vendors/owl-carousel/owl.carousel.min.css')}}">
 	<link rel="stylesheet" href="{{ asset('interface/vendors/lightbox/simpleLightbox.css')}}">

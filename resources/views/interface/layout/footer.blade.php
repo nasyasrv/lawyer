@@ -17,17 +17,24 @@
 								<div class="col-5">
 									<ul class="list">
 										<li><a href="#">Home</a></li>
-										<li><a href="#">Features</a></li>
-										<li><a href="#">Services</a></li>
-										<li><a href="#">Portfolio</a></li>
+										<li><a href="#">About Us</a></li>
+										<li><a href="#">Service</a></li>
+										<li><a href="#">Superiority</a></li>
 									</ul>
 								</div>
 								<div class="col-5">
 									<ul class="list">
-										<li><a href="#">Team</a></li>
-										<li><a href="#">Pricing</a></li>
-										<li><a href="#">Blog</a></li>
-										<li><a href="#">contact</a></li>
+										<li><a href="#">Legal Patnership</a></li>
+										<li><a href="#">Galery</a></li>
+										<li><a href="#">Legal Opini</a></li>
+										<li><a href="#">Jurnal</a></li>
+									</ul>
+								</div>
+                                <div class="col-5">
+									<ul class="list">
+										<li><a href="#">Jurnal</a></li>
+										<li><a href="#">Segmentasi Klien</a></li>
+										<li><a href="#">Kotak</a></li>
 									</ul>
 								</div>
 							</div>
@@ -57,14 +64,14 @@
 						<div class="single-footer-widget mail-chimp">
 							<h5 class="mb-20">Instragram Feed</h5>
 							<ul class="instafeed d-flex flex-wrap">
-								<li><img src="img/i1.jpg" alt=""></li>
-								<li><img src="img/i2.jpg" alt=""></li>
-								<li><img src="img/i3.jpg" alt=""></li>
-								<li><img src="img/i4.jpg" alt=""></li>
-								<li><img src="img/i5.jpg" alt=""></li>
-								<li><img src="img/i6.jpg" alt=""></li>
-								<li><img src="img/i7.jpg" alt=""></li>
-								<li><img src="img/i8.jpg" alt=""></li>
+								<li><img src="{{asset ('interface/img/i1.jpg')}}" alt=""></li>
+								<li><img src="{{asset ('interface/img/i2.jpg')}}" alt=""></li>
+								<li><img src="{{asset ('interface/img/i3.jpg')}}" alt=""></li>
+								<li><img src="{{asset ('interface/img/i4.jpg')}}" alt=""></li>
+								<li><img src="{{asset ('interface/img/i5.jpg')}}" alt=""></li>
+								<li><img src="{{asset ('interface/img/i6.jpg')}}" alt=""></li>
+								<li><img src="{{asset ('interface/img/i7.jpg')}}" alt=""></li>
+								<li><img src="{{asset ('interface/img/i8.jpg')}}" alt=""></li>
 							</ul>
 						</div>
 					</div>
@@ -81,10 +88,10 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 					</div>
 					<div class="col-lg-6 col-md-12 text-right">
 						<div class="social-icons">
-							<a href="#"><i class="fa fa-facebook"></i></a>
-							<a href="#"><i class="fa fa-twitter"></i></a>
-							<a href="#"><i class="fa fa-dribbble"></i></a>
-							<a href="#"><i class="fa fa-behance"></i></a>
+							<a href="#"><i class="fab fa-facebook"></i></a>
+							<a href="#"><i class="fab fa-twitter"></i></a>
+							<a href="#"><i class="fab fa-dribbble"></i></a>
+							<a href="#"><i class="fab fa-behance"></i></a>
 						</div>
 					</div>
 				</div>
