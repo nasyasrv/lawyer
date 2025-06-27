@@ -11,19 +11,19 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
             <ul class="nav navbar-nav menu_nav ml-auto">
-                <li class="nav-item active"><a class="nav-link" href="/">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="/about">About Us</a></li>
-                <li class="nav-item"><a class="nav-link" href="/service">Service</a></li>
-                <li class="nav-item"><a class="nav-link" href="/service">Superiority</a></li>
-                <li class="nav-item"><a class="nav-link" href="/partner">Legal Partnership</a></li>
-                <li class="nav-item"><a class="nav-link" href="/galery">Galery</a></li>
+                <li class="nav-item active"><a class="nav-link" href="{{ route('welcome') }}">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ route('about') }}">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ route('service') }}">Service</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ route('superiority') }}">Superiority</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ route('partner') }}">Legal Partnership</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ route('galery') }}">Galery</a></li>
                 <li class="nav-item submenu dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
                         aria-haspopup="true" aria-expanded="false">News</a>
                     <ul class="dropdown-menu">
-                        <li class="nav-item"><a class="nav-link" href="/article">Legal Opini</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/jurnal">Jurnal</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/segment">Segmentasi Klien</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ route('article') }}">Legal Opini</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ route('jurnal') }}">Jurnal</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ route('segment') }}">Segmentasi Klien</a></li>
                     </ul>
                 </li>
                 <li class="nav-item"><a class="nav-link" href="/contact">Kontak</a></li>

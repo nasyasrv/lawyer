@@ -14,42 +14,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('interface.welcome');
-});
-
-Route::get('/about', function () {
-    return view('interface.about');
-});
-
-Route::get('/service', function () {
-    return view('interface.service');
-});
-
-Route::get('/partner', function () {
-    return view('interface.partner');
-});
-
-Route::get('/galery', function () {
-    return view('interface.galery');
-});
-
-Route::get('/article', function () {
-    return view('interface.article');
-});
-
-Route::get('/jurnal', function () {
-    return view('interface.jurnal');
-});
-
-Route::get('/segment', function () {
-    return view('interface.segment');
-});
-
-Route::get('/contact', function () {
-    return view('interface.contact');
-});
-
-Auth::routes();
-
+Auth::routes(['register' => false]);
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/', [App\Http\Controllers\LawyerController::class, 'welcome'])->name('welcome');
+Route::get('/about', [App\Http\Controllers\LawyerController::class, 'about'])->name('about');
+Route::get('/service', [App\Http\Controllers\LawyerController::class, 'service'])->name('service');
+Route::get('/partner', [App\Http\Controllers\LawyerController::class, 'partner'])->name('partner');
+Route::get('/galery', [App\Http\Controllers\LawyerController::class, 'galery'])->name('galery');
+Route::get('/article', [App\Http\Controllers\LawyerController::class, 'article'])->name('article');
+Route::get('/jurnal', [App\Http\Controllers\LawyerController::class, 'jurnal'])->name('jurnal');
+Route::get('/segment', [App\Http\Controllers\LawyerController::class, 'segment'])->name('segment');
+Route::get('/superiority', [App\Http\Controllers\LawyerController::class, 'superiority'])->name('superiority');
+Route::get('/contact', [App\Http\Controllers\LawyerController::class, 'contact'])->name('contact');
+
+
+Route::resource('legal-opini', App\Http\Controllers\LegalOpiniController::class);
