@@ -13,7 +13,7 @@
     <meta name="description" content="" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="{{ asset('assets_admin/img/favicon/favicon.ico')}}" />
+    <link rel="icon" type="image/x-icon" href="{{ asset('assets_admin/img/favicon/favicon.ico') }}" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -23,40 +23,51 @@
         rel="stylesheet" />
 
     <!-- Icons -->
-    <link rel="stylesheet" href="{{ asset('assets_admin/vendor/fonts/fontawesome.css')}}" />
-    <link rel="stylesheet" href="{{ asset('assets_admin/vendor/fonts/tabler-icons.css')}}" />
-    <link rel="stylesheet" href="{{ asset('assets_admin/vendor/fonts/flag-icons.css')}}" />
+    <link rel="stylesheet" href="{{ asset('assets_admin/vendor/fonts/fontawesome.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets_admin/vendor/fonts/tabler-icons.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets_admin/vendor/fonts/flag-icons.css') }}" />
 
     <!-- Core CSS -->
 
-    <link rel="stylesheet" href="{{ asset('assets_admin/vendor/css/rtl/core.css')}}" />
-    <link rel="stylesheet" href="{{ asset('assets_admin/vendor/css/rtl/theme-default.css')}}" />
+    <link rel="stylesheet" href="{{ asset('assets_admin/vendor/css/rtl/core.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets_admin/vendor/css/rtl/theme-default.css') }}" />
 
-    <link rel="stylesheet" href="{{ asset('assets_admin/css/demo.css')}}" />
+    <link rel="stylesheet" href="{{ asset('assets_admin/css/demo.css') }}" />
 
     <!-- Vendors CSS -->
-    <link rel="stylesheet" href="{{ asset('assets_admin/vendor/libs/node-waves/node-waves.css')}}" />
+    <link rel="stylesheet" href="{{ asset('assets_admin/vendor/libs/node-waves/node-waves.css') }}" />
 
-    <link rel="stylesheet" href="{{ asset('assets_admin/vendor/libs/perfect-scrollbar/perfect-scrollbar.css')}}" />
-    <link rel="stylesheet" href="{{ asset('assets_admin/vendor/libs/typeahead-js/typeahead.css')}}" />
-    <link rel="stylesheet" href="{{ asset('assets_admin/vendor/libs/apex-charts/apex-charts.css')}}" />
-    <link rel="stylesheet" href="{{ asset('assets_admin/vendor/libs/swiper/swiper.css')}}" />
-    <link rel="stylesheet" href="{{ asset('assets_admin/vendor/libs/datatables-bs5/datatables.bootstrap5.css')}}" />
-    <link rel="stylesheet" href="{{ asset('assets_admin/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.css')}}" />
-    <link rel="stylesheet" href="{{ asset('assets_admin/vendor/libs/datatables-checkboxes-jquery/datatables.checkboxes.css')}}" />
+    <link rel="stylesheet" href="{{ asset('assets_admin/vendor/libs/perfect-scrollbar/perfect-scrollbar.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets_admin/vendor/libs/typeahead-js/typeahead.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets_admin/vendor/libs/apex-charts/apex-charts.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets_admin/vendor/libs/swiper/swiper.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets_admin/vendor/libs/select2/select2.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets_admin/vendor/libs/datatables-bs5/datatables.bootstrap5.css') }}" />
+    <link rel="stylesheet"
+        href="{{ asset('assets_admin/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.css') }}" />
+    <link rel="stylesheet"
+        href="{{ asset('assets_admin/vendor/libs/datatables-checkboxes-jquery/datatables.checkboxes.css') }}" />
+
+    <link rel="stylesheet" href="{{ asset('assets_admin/vendor/libs/quill/typography.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets_admin/vendor/libs/quill/katex.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets_admin/vendor/libs/quill/editor.css') }}" />
 
     <!-- Page CSS -->
-    <link rel="stylesheet" href="{{ asset('assets_admin/vendor/css/pages/cards-advance.css')}}" />
+    <link rel="stylesheet" href="{{ asset('assets_admin/vendor/css/pages/cards-advance.css') }}" />
 
     <!-- Helpers -->
-    <script src="{{ asset('assets_admin/vendor/js/helpers.js')}}"></script>
+    <script src="{{ asset('assets_admin/vendor/js/helpers.js') }}"></script>
     <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
 
     <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
-    <script src="{{ asset('assets_admin/js/config.js')}}"></script>
+    <script src="{{ asset('assets_admin/js/config.js') }}"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+
 </head>
 
 <body>
+    <x-loader />
     <!-- Layout wrapper -->
     <div class="layout-wrapper layout-navbar-full layout-horizontal layout-without-menu">
         <div class="layout-container">
@@ -80,13 +91,13 @@
                     @include('admin.layouts.footer')
                     <!-- / Footer -->
 
-            <div class="content-backdrop fade"></div>
-          </div>
-          <!--/ Content wrapper -->
-        </div>
+                    <div class="content-backdrop fade"></div>
+                </div>
+                <!--/ Content wrapper -->
+            </div>
 
-        <!--/ Layout container -->
-      </div>
+            <!--/ Layout container -->
+        </div>
     </div>
 
     <!-- Overlay -->
@@ -100,28 +111,59 @@
     <!-- Core JS -->
     <!-- build:js assets_admin/vendor/js/core.js -->
 
-    <script src="{{ asset('assets_admin/vendor/libs/jquery/jquery.js')}}"></script>
-    <script src="{{ asset('assets_admin/vendor/libs/popper/popper.js')}}"></script>
-    <script src="{{ asset('assets_admin/vendor/js/bootstrap.js')}}"></script>
-    <script src="{{ asset('assets_admin/vendor/libs/node-waves/node-waves.js')}}"></script>
-    <script src="{{ asset('assets_admin/vendor/libs/perfect-scrollbar/perfect-scrollbar.js')}}"></script>
-    <script src="{{ asset('assets_admin/vendor/libs/hammer/hammer.js')}}"></script>
-    <script src="{{ asset('assets_admin/vendor/libs/i18n/i18n.js')}}"></script>
-    <script src="{{ asset('assets_admin/vendor/libs/typeahead-js/typeahead.js')}}"></script>
-    <script src="{{ asset('assets_admin/vendor/js/menu.js')}}"></script>
+    <script src="{{ asset('assets_admin/vendor/libs/jquery/jquery.js') }}"></script>
+    <script src="{{ asset('assets_admin/vendor/libs/popper/popper.js') }}"></script>
+    <script src="{{ asset('assets_admin/vendor/js/bootstrap.js') }}"></script>
+    <script src="{{ asset('assets_admin/vendor/libs/node-waves/node-waves.js') }}"></script>
+    <script src="{{ asset('assets_admin/vendor/libs/perfect-scrollbar/perfect-scrollbar.js') }}"></script>
+    <script src="{{ asset('assets_admin/vendor/libs/hammer/hammer.js') }}"></script>
+    <script src="{{ asset('assets_admin/vendor/libs/i18n/i18n.js') }}"></script>
+    <script src="{{ asset('assets_admin/vendor/libs/typeahead-js/typeahead.js') }}"></script>
+    <script src="{{ asset('assets_admin/vendor/js/menu.js') }}"></script>
 
     <!-- endbuild -->
 
     <!-- Vendors JS -->
-    <script src="{{ asset('assets_admin/vendor/libs/apex-charts/apexcharts.js')}}"></script>
-    <script src="{{ asset('assets_admin/vendor/libs/swiper/swiper.js')}}"></script>
-    <script src="{{ asset('assets_admin/vendor/libs/datatables-bs5/datatables-bootstrap5.js')}}"></script>
+    <script src="{{ asset('assets_admin/vendor/libs/apex-charts/apexcharts.js') }}"></script>
+    <script src="{{ asset('assets_admin/vendor/libs/swiper/swiper.js') }}"></script>
+    <script src="{{ asset('assets_admin/vendor/libs/datatables-bs5/datatables-bootstrap5.js') }}"></script>
+    <script src="{{ asset('assets_admin/vendor/libs/quill/katex.js') }}"></script>
+    <script src="{{ asset('assets_admin/vendor/libs/quill/quill.js') }}"></script>
 
     <!-- Main JS -->
-    <script src="{{ asset('assets_admin/js/main.js')}}"></script>
+    <script src="{{ asset('assets_admin/js/main.js') }}"></script>
 
     <!-- Page JS -->
-    <script src="{{ asset('assets_admin/js/dashboards-analytics.js')}}"></script>
-  </body>
-</html>
+    <script src="{{ asset('assets_admin/js/dashboards-analytics.js') }}"></script>
+    <script src="{{ asset('assets_admin/js/modal-edit-user.js') }}"></script>
 
+    <script src="{{ asset('assets_admin/js/forms-editors.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    @stack('scripts')
+
+    <script>
+        @if (Session::has('success'))
+            toastr.success("{{ Session::get('success') }}");
+        @endif
+
+        @if (Session::has('error'))
+            toastr.error("{{ Session::get('error') }}");
+        @endif
+
+        @if (Session::has('info'))
+            toastr.info("{{ Session::get('info') }}");
+        @endif
+
+        @if (Session::has('warning'))
+            toastr.warning("{{ Session::get('warning') }}");
+        @endif
+    </script>
+
+
+
+</body>
+
+</html>

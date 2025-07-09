@@ -26,7 +26,7 @@ class LawyerController extends Controller
         return view('interface.partner');
     }
 
-    public function galery()
+    public function picture()
     {
         return view('interface.galery');
     }
@@ -36,7 +36,7 @@ class LawyerController extends Controller
         return view('interface.article');
     }
 
-    public function jurnal()
+    public function file()
     {
         return view('interface.jurnal');
     }

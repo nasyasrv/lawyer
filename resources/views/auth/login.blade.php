@@ -6,7 +6,7 @@
             <h4 class="mb-1">Welcome to Vuexy! 👋</h4>
             <p class="mb-6">Please sign-in to your account and start the adventure</p>
 
-            <form id="formAuthentication" class="mb-6" action="{{ route('login') }}" method="POST">
+            <form id="formAuthentication" class="mb-6" action="{{ route('login') }}" method="POST" onsubmit="document.getElementById('loading-screen').style.display = 'flex';">
                 @csrf
               <div class="mb-6">
                 <label for="email" class="form-label">Email</label>

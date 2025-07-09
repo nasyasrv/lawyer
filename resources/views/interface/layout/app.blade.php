@@ -7,7 +7,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="icon" href="{{ asset('interface/img/favicon.png')}}" type="image/png">
 	<title>LAWFUL LAWFIRM</title>
-	<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{ asset('interface/css/style.css')}}">
+	<!-- Bootstrap CSS -->s
 	<link rel="stylesheet" href="{{ asset('interface/css/bootstrap.css')}}">
 	<link rel="stylesheet" href="{{ asset('interface/vendors/linericon/style.css')}}">
 	<link rel="stylesheet" href="{{ asset('interface/css/font-awesome/css/all.min.css')}}">
@@ -17,10 +18,10 @@
 	<link rel="stylesheet" href="{{ asset('interface/vendors/nice-select/css/nice-select.css')}}">
 	<link rel="stylesheet" href="{{ asset('interface/vendors/animate-css/animate.css')}}">
 	<!-- main css -->
-	<link rel="stylesheet" href="{{ asset('interface/css/style.css')}}">
 </head>
 
 <body>
+    <x-loader />
     @include('interface.layout.header')
     @yield('contents')
     @stack('contents')
@@ -44,6 +45,7 @@
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
 	<script src="{{ asset('interface/js/gmaps.min.js')}}"></script>
 	<script src="{{ asset('interface/js/theme.js')}}"></script>
+    @yield('scripts')
 </body>
 
 </html>

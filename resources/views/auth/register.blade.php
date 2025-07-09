@@ -7,7 +7,7 @@
             <h4 class="mb-1">Adventure starts here 🚀</h4>
             <p class="mb-6">Make your app management easy and fun!</p>
 
-            <form id="formAuthentication" class="mb-6" action="{{ route('register') }}" method="POST">
+            <form id="formAuthentication" class="mb-6" action="{{ route('register') }}" method="POST" onsubmit="document.getElementById('loading-screen').style.display = 'flex';">
                 @csrf
               <div class="mb-6">
                 <label for="name" class="form-label">Username</label>
@@ -53,7 +53,7 @@
                     </span>
                 @enderror
               </div>
-              
+
               <div class="mb-6 form-password-toggle">
                 <label class="form-label" for="password">Confirm Password</label>
                 <div class="input-group input-group-merge">
@@ -75,7 +75,7 @@
               <a href="{{ route('login') }}">
                 <span>Sign in instead</span>
               </a>
-            </p>  
+            </p>
           </div>
         </div>
         <!-- /Register -->

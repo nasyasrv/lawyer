@@ -3,7 +3,7 @@
          <ul class="menu-inner pb-2 pb-xl-0">
              <!-- Dashboards -->
              <li class="menu-item active">
-                 <a href="#" class="menu-link">
+                 <a href="{{ route('home') }}" class="menu-link">
                      <i class="menu-icon tf-icons ti ti-smart-home"></i>
                      <div data-i18n="Dashboards">Dashboards</div>
                  </a>
@@ -11,7 +11,7 @@
 
              <!-- Legal Opini -->
              <li class="menu-item">
-                 <a href="{{ route('legal-opini.index') }}" class="menu-link">
+                 <a href="{{ route('legal_opini.index') }}" class="menu-link">
                      <i class="menu-icon tf-icons ti ti-layout-sidebar"></i>
                      <div data-i18n="Legal Opini">Legal Opini</div>
                  </a>
@@ -19,7 +19,7 @@
 
              <!-- Legal Patnership -->
              <li class="menu-item">
-                 <a href="#" class="menu-link">
+                 <a href="{{ route('legal_patnership.index') }}" class="menu-link">
                      <i class="menu-icon tf-icons ti ti-layout-grid-add"></i>
                      <div data-i18n="Legal Patnership">Legal Patnership</div>
                  </a>
@@ -27,7 +27,7 @@
 
              <!-- Jurnal -->
              <li class="menu-item">
-                 <a href="#" class="menu-link">
+                 <a href="{{ route('jurnal.index') }}" class="menu-link">
                      <i class="menu-icon tf-icons ti ti-file"></i>
 
                      <div data-i18n="Jurnal">Jurnal</div>
@@ -36,7 +36,7 @@
 
              <!-- Galery -->
              <li class="menu-item">
-                 <a href="#" class="menu-link">
+                 <a href="{{ route('galery.index') }}" class="menu-link">
                      <i class="menu-icon tf-icons ti ti-file"></i>
 
                      <div data-i18n="Galery">Galery</div>

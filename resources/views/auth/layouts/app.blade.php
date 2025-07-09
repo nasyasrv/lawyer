@@ -56,6 +56,7 @@
 
 <body>
     <!-- Content -->
+    <x-loader />
 
     <div class="authentication-wrapper authentication-cover">
         <!-- Logo -->

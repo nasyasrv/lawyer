@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class legal_opini extends Model
+class galery extends Model
 {
     use HasFactory;
 
@@ -14,6 +14,6 @@ class legal_opini extends Model
     ];
 
     protected $fillable = [
-        'title', 'publisher', 'author', 'date_publish', 'content', 'picture'
+        'name', 'image'
     ];
 }

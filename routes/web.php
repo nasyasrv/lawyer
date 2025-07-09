@@ -20,12 +20,15 @@ Route::get('/', [App\Http\Controllers\LawyerController::class, 'welcome'])->name
 Route::get('/about', [App\Http\Controllers\LawyerController::class, 'about'])->name('about');
 Route::get('/service', [App\Http\Controllers\LawyerController::class, 'service'])->name('service');
 Route::get('/partner', [App\Http\Controllers\LawyerController::class, 'partner'])->name('partner');
-Route::get('/galery', [App\Http\Controllers\LawyerController::class, 'galery'])->name('galery');
+Route::get('/picture', [App\Http\Controllers\LawyerController::class, 'picture'])->name('picture');
 Route::get('/article', [App\Http\Controllers\LawyerController::class, 'article'])->name('article');
-Route::get('/jurnal', [App\Http\Controllers\LawyerController::class, 'jurnal'])->name('jurnal');
+Route::get('/file', [App\Http\Controllers\LawyerController::class, 'file'])->name('file');
 Route::get('/segment', [App\Http\Controllers\LawyerController::class, 'segment'])->name('segment');
 Route::get('/superiority', [App\Http\Controllers\LawyerController::class, 'superiority'])->name('superiority');
 Route::get('/contact', [App\Http\Controllers\LawyerController::class, 'contact'])->name('contact');
 
 
-Route::resource('legal-opini', App\Http\Controllers\LegalOpiniController::class);
+Route::resource('legal_opini', App\Http\Controllers\LegalOpiniController::class);
+Route::resource('legal_patnership', App\Http\Controllers\LegalPatnershipController::class);
+Route::resource('jurnal', App\Http\Controllers\JurnalController::class);
+Route::resource('galery', App\Http\Controllers\GaleryController::class);

@@ -11,14 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('legal_opinis', function (Blueprint $table) {
+        Schema::create('galeries', function (Blueprint $table) {
             $table->id();
-            $table->string('title');
-            $table->string('publisher');
-            $table->string('author');
-            $table->date('date_publish');
-            $table->text('content');
-            $table->string('picture');
+            $table->string('name');
+            $table->string('image');
             $table->timestamps();
         });
     }
@@ -28,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('legal_opinis');
+        Schema::dropIfExists('galeries');
     }
 };
