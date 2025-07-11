@@ -14,7 +14,6 @@
                 <li class="nav-item active"><a class="nav-link" href="{{ route('welcome') }}">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="{{ route('about') }}">About Us</a></li>
                 <li class="nav-item"><a class="nav-link" href="{{ route('service') }}">Service</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ route('superiority') }}">Superiority</a></li>
                 <li class="nav-item"><a class="nav-link" href="{{ route('partner') }}">Legal Partnership</a></li>
                 <li class="nav-item"><a class="nav-link" href="{{ route('picture') }}">Galery</a></li>
                 <li class="nav-item submenu dropdown">
@@ -23,7 +22,6 @@
                     <ul class="dropdown-menu">
                         <li class="nav-item"><a class="nav-link" href="{{ route('article') }}">Legal Opini</a></li>
                         <li class="nav-item"><a class="nav-link" href="{{ route('file') }}">Jurnal</a></li>
-                        <li class="nav-item"><a class="nav-link" href="{{ route('segment') }}">Segmentasi Klien</a></li>
                     </ul>
                 </li>
                 <li class="nav-item"><a class="nav-link" href="/contact">Kontak</a></li>

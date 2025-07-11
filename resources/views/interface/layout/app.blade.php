@@ -8,7 +8,7 @@
 	<link rel="icon" href="{{ asset('interface/img/favicon.png')}}" type="image/png">
 	<title>LAWFUL LAWFIRM</title>
     <link rel="stylesheet" href="{{ asset('interface/css/style.css')}}">
-	<!-- Bootstrap CSS -->s
+	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="{{ asset('interface/css/bootstrap.css')}}">
 	<link rel="stylesheet" href="{{ asset('interface/vendors/linericon/style.css')}}">
 	<link rel="stylesheet" href="{{ asset('interface/css/font-awesome/css/all.min.css')}}">
@@ -23,8 +23,8 @@
 <body>
     <x-loader />
     @include('interface.layout.header')
-    @yield('contents')
-    @stack('contents')
+    @yield('content')
+    @stack('content')
     @include('interface.layout.footer')
 
 	<!-- Optional JavaScript -->
@@ -45,7 +45,7 @@
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
 	<script src="{{ asset('interface/js/gmaps.min.js')}}"></script>
 	<script src="{{ asset('interface/js/theme.js')}}"></script>
-    @yield('scripts')
+    @yield('script')
 </body>
 
 </html>

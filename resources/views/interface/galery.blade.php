@@ -1,5 +1,5 @@
 @extends('interface.layout.app')
-@section('contents', 'contents')
+@section('content')
 
 <section class="banner_area ">
     <div class="banner_inner overlay d-flex align-items-center">

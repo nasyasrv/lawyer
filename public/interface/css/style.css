@@ -223,7 +223,7 @@ button:focus {
     display: inline-block;
     padding: 0px 38px;
     color: #222222;
-    background: #333333;
+    background: #ffffff;
     font-family: "Raleway", sans-serif;
     font-size: 13px;
     font-weight: 600;
@@ -253,7 +253,7 @@ button:focus {
 }
 
 .primary-btn:hover {
-    color: #333333;
+    color: #ffffff;
 }
 
 .primary-btn:hover:after {
@@ -982,7 +982,7 @@ button:focus {
 
 .banner_area .banner_inner {
     position: relative;
-    background: url(../img/banner/common-banner.jpg) no-repeat center center;
+    background: url(../img/pengadilan.jpg) no-repeat center center;
     background-size: cover;
     width: 100%;
     min-height: 300px;
@@ -1001,7 +1001,7 @@ button:focus {
 }
 
 .banner_area .banner_inner .banner_content h2 {
-    color: #333333;
+    color: #fff;
     font-size: 48px;
     margin-bottom: 0px;
     font-weight: 700;
@@ -1009,7 +1009,7 @@ button:focus {
 
 .banner_area .banner_inner .banner_content .page_link a {
     font-size: 14px;
-    color: #333333;
+    color: #ffffff;
     font-family: "Raleway", sans-serif;
     margin-right: 30px;
     position: relative;
@@ -1624,7 +1624,7 @@ button:focus {
 
 .cta-area h1 {
     font-size: 36px;
-    color: #333333;
+    color: #ffffff;
 }
 
 .cta-area .primary-btn {
@@ -2626,7 +2626,7 @@ button:focus {
 }
 
 .contact_form .primary-btn:hover {
-    background: #333333;
+    background: #ffffff;
     color: #222222;
 }
 
@@ -4218,7 +4218,7 @@ h6 {
 }
 
 .footer-area h5 {
-    color: #333333;
+    color: #e2a807;
     margin-bottom: 25px;
     font-size: 18px;
     font-weight: 700;

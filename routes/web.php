@@ -24,7 +24,6 @@ Route::get('/picture', [App\Http\Controllers\LawyerController::class, 'picture']
 Route::get('/article', [App\Http\Controllers\LawyerController::class, 'article'])->name('article');
 Route::get('/file', [App\Http\Controllers\LawyerController::class, 'file'])->name('file');
 Route::get('/segment', [App\Http\Controllers\LawyerController::class, 'segment'])->name('segment');
-Route::get('/superiority', [App\Http\Controllers\LawyerController::class, 'superiority'])->name('superiority');
 Route::get('/contact', [App\Http\Controllers\LawyerController::class, 'contact'])->name('contact');
 
 

@@ -46,11 +46,6 @@ class LawyerController extends Controller
         return view('interface.segment');
     }
 
-    public function superiority()
-    {
-        return view('interface.superiority');
-    }
-
     public function contact()
     {
         return view('interface.contact');

@@ -1,5 +1,5 @@
 @extends('interface.layout.app')
-@section('contents', 'contents')
+@section('content')
 
 <!--================ Start Home Banner Area =================-->
 <section class="home_banner_area overlay">

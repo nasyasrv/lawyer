@@ -1,5 +1,5 @@
 @extends('interface.layout.app')
-@section('contents')
+@section('content')
     <!--================ Start Home Banner Area =================-->
     <section class="home_banner_area overlay">
         <div class="banner_inner">
@@ -137,7 +137,7 @@
     <!--================ End video Area =================-->
 
     <!--================ Start service Area =================-->
-    <section class="service-area ">
+    <section class="service-area section_gap" style="margin-bottom:0px;">
         <div class="container">
             <div class="row align-items-center justify-content-center">
                 <div class="col-lg-6">
@@ -156,9 +156,25 @@
                                 <i class="fas fa-check-circle"></i> Penguatan kesadaran hukum melalui edukasi public
                             </p>
                         </div>
+                        <div class="get-know mt-5">
+                        <h1 style="color: white;">SEGMENTASI KLIEN</h1>
+                        <p style="color: white;">
+                            Kami melayani spektrum klien yang luas dengan pendekatan personal dan profesional, di
+                            antaranya:
+                        </p>
+
+                        <p style="white-space: pre-line; color: white;">
+                            - Perorangan dan keluarga
+                            - Usaha mikro, kecil, dan menengah (UMKM)
+                            - Perusahaan swasta dan korporasi nasional
+                            - Instansi pemerintahan dan BUMDes
+                            - Lembaga pendidikan, yayasan, dan organisasi sosial
+
+                        </p>
+                    </div>
                     </div>
                 </div>
-                <div class="col-lg-5">
+                <div class="col-lg-6">
                     <div class="service-2-right">
                         <div class="row">
                             <div class="col-lg-6 col-md-6 col-sm-6">
@@ -259,7 +275,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <h1>Get to Know Project Estimate?</h1>
-                    <p>There is a moment in the life of any aspiring astronomer that it is time to buy that first telescope.
+                    <p style="color: white;">There is a moment in the life of any aspiring astronomer that it is time to buy that first telescope.
                         It’s
                         exciting to think about setting up your own viewing station whether that is on the deck</p>
                     <a href="#" class="primary-btn">Get Free Estimate</a>
