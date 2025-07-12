@@ -1,75 +1,75 @@
 @extends('interface.layout.app')
-@section('content')    
+@section('content')
     <!--================Home Banner Area =================-->
-	<section class="banner_area ">
-		<div class="banner_inner overlay d-flex align-items-center">
-			<div class="container">
-				<div class="banner_content text-center">
-					<div class="page_link">
-						<a href="index.html">Home</a>
-						<a href="contact.html">Contact Us</a>
-					</div>
-					<h2>Contact Us</h2>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--================End Home Banner Area =================-->
+    <section class="banner_area ">
+        <div class="banner_inner overlay d-flex align-items-center">
+            <div class="container">
+                <div class="banner_content text-center">
+                    <div class="page_link">
+                        <a href="index.html">Home</a>
+                        <a href="contact.html">Contact Us</a>
+                    </div>
+                    <h2>Contact Us</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================End Home Banner Area =================-->
 
-	<!--================Contact Area =================-->
-	<section class="contact_area section_gap">
-		<div class="container">
-			<div id="mapBox" class="mapBox" data-lat="40.701083" data-lon="-74.1522848" data-zoom="13" data-info="PO Box CT16122 Collins Street West, Victoria 8007, Australia."
-			 data-mlat="40.701083" data-mlon="-74.1522848">
-			</div>
-			<div class="row">
-				<div class="col-lg-3">
-					<div class="contact_info">
-						<div class="info_item">
-							<i class="lnr lnr-home"></i>
-							<h6>California, United States</h6>
-							<p>Santa monica bullevard</p>
-						</div>
-						<div class="info_item">
-							<i class="lnr lnr-phone-handset"></i>
-							<h6><a href="#">00 (440) 9865 562</a></h6>
-							<p>Mon to Fri 9am to 6 pm</p>
-						</div>
-						<div class="info_item">
-							<i class="lnr lnr-envelope"></i>
-							<h6><a href="#">support@colorlib.com</a></h6>
-							<p>Send us your query anytime!</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-9">
-					<form class="row contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
-						<div class="col-md-6">
-							<div class="form-group">
-								<input type="text" class="form-control" id="name" name="name" placeholder="Enter your name"
-                                onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'">
-							</div>
-							<div class="form-group">
-								<input type="email" class="form-control" id="email" name="email" placeholder="Enter email address"
-                                onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'">
-							</div>
-							<div class="form-group">
-								<input type="text" class="form-control" id="subject" name="subject" placeholder="Enter Subject"
-                                onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Subject'">
-							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="form-group">
-								<textarea class="form-control" name="message" id="message" rows="1" placeholder="Enter Message"
-                                onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Message'"></textarea>
-							</div>
-						</div>
-						<div class="col-md-12 text-right">
-							<button type="submit" value="submit" class="primary-btn text-uppercase">Send Message</button>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--================Contact Area =================-->
+    <!--================Contact Area =================-->
+    <section class="contact_area section_gap">
+        <div class="container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3946.6745860375327!2d114.331305!3d-8.4335819!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd3fda7e9c9fed5%3A0xdb0214b9aa109fa5!2spengacara%20%2F%20Advokat%20Nurul%20Safi&#39;i%2C%20S.H!5e0!3m2!1sid!2sid!4v1752230759071!5m2!1sid!2sid"
+                width="100%" height="400" style="border:0; margin-bottom:50px;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="contact_info">
+                        <div class="info_item">
+                            <i class="lnr lnr-home"></i>
+                            <h6>Kec. Muncar, Kabupaten Banyuwangi, Jawa Timur</h6>
+                            <p>Dusun Muncar baru, RT.01/RW.05, Dusun Muncar Baru, Tembokrejo, Kec. Muncar, Kabupaten
+                                Banyuwangi, Jawa Timur 68472</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="contact_info">
+                        <div class="info_item">
+                            <i class="lnr lnr-phone-handset"></i>
+                            <h6><a href="#">+62 853-3197-9610</a></h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="contact_info">
+                        <div class="info_item">
+                            <i class="lnr lnr-envelope"></i>
+                            <h6><a href="#">snurulsafiilawoffice@gmail.com</a></h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="contact_info">
+                        <div class="info_item">
+                            <i class="fab fa-instagram"></i>
+                            <h6><a href="https://instagram.com/nurulsafiilaw" target="_blank">@nurulsafiilaw</a></h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="contact_info">
+                        <div class="info_item">
+                            <i class="fab fa-tiktok"></i>
+                            <h6><a href="https://www.tiktok.com/@pengacara_nurul_safii" target="_blank">@pengacara_nurul_safii</a></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!--================Contact Area =================-->

@@ -55,6 +55,7 @@
                             <!-- single success -->
                             <div class="col-lg-4 col-md-3">
                                 <div class="single-success">
+                                    <img class="img-fluid mb-3" src="{{ asset('interface/img/1.jpg') }}" alt="">
                                     <h5>Litigasi & Penyelesaian Sengketa</h5>
                                     <p>
                                         - Perdata: Gugatan wanprestasi, PMH, waris, perdata agraria <br>
@@ -67,6 +68,7 @@
                             <!-- single success -->
                             <div class="col-lg-4 col-md-3">
                                 <div class="single-success">
+                                    <img class="img-fluid mb-3" src="{{ asset('interface/img/2.jpg') }}" alt="">
                                     <h5>Konsultasi & Pendampingan Hukum Bisnis</h5>
                                     <p>
                                         - Legal opinion, kontrak bisnis, merger & akuisisi <br>
@@ -77,6 +79,7 @@
                             <!-- single success -->
                             <div class="col-lg-4 col-md-3">
                                 <div class="single-success">
+                                    <img class="img-fluid mb-3" src="{{ asset('interface/img/3.jpg') }}" alt="">
                                     <h5>Hukum Keluarga & Waris</h5>
                                     <p>
                                         - Cerai gugat/talak, pembagian harta bersama <br>
@@ -87,6 +90,7 @@
                             <!-- single success -->
                             <div class="col-lg-4 col-md-3">
                                 <div class="single-success">
+                                    <img class="img-fluid mb-3" src="{{ asset('interface/img/4.jpg') }}" alt="">
                                     <h5>Hukum Ketenagakerjaan & Hubungan Industrial</h5>
                                     <p>
                                         - PHK sepihak, perselisihan hak & kepentingan <br>
@@ -97,6 +101,7 @@
 
                             <div class="col-lg-4 col-md-3">
                                 <div class="single-success">
+                                    <img class="img-fluid mb-3" src="{{ asset('interface/img/8.jpg') }}" alt="">
                                     <h5>Hukum Agraria & Pertanahan</h5>
                                     <p>
                                         - Sengketa lahan, pendaftaran tanah, pengurusan sertifikat <br>
@@ -107,6 +112,7 @@
                             <!-- single success -->
                             <div class="col-lg-4 col-md-3">
                                 <div class="single-success">
+                                    <img class="img-fluid mb-3" src="{{ asset('interface/img/6.jpg') }}" alt="">
                                     <h5>Mediasi & Negosiasi Strategis</h5>
                                     <p>
                                         - Penyelesaian sengketa tanpa pengadilan dengan pendekatan win-win <br>
@@ -117,6 +123,7 @@
                             <!-- single success -->
                             <div class="col-lg-4 col-md-3">
                                 <div class="single-success">
+                                    <img class="img-fluid mb-3" src="{{ asset('interface/img/7.jpg') }}" alt="">
                                     <h5>Surat- menyurat </h5>
                                     <p>
                                         - Surat Pelaporan/ Surat Pengaduan <br>
@@ -157,21 +164,21 @@
                             </p>
                         </div>
                         <div class="get-know mt-5">
-                        <h1 style="color: white;">SEGMENTASI KLIEN</h1>
-                        <p style="color: white;">
-                            Kami melayani spektrum klien yang luas dengan pendekatan personal dan profesional, di
-                            antaranya:
-                        </p>
+                            <h1 style="color: white;">SEGMENTASI KLIEN</h1>
+                            <p style="color: white;">
+                                Kami melayani spektrum klien yang luas dengan pendekatan personal dan profesional, di
+                                antaranya:
+                            </p>
 
-                        <p style="white-space: pre-line; color: white;">
-                            - Perorangan dan keluarga
-                            - Usaha mikro, kecil, dan menengah (UMKM)
-                            - Perusahaan swasta dan korporasi nasional
-                            - Instansi pemerintahan dan BUMDes
-                            - Lembaga pendidikan, yayasan, dan organisasi sosial
+                            <p style="white-space: pre-line; color: white;">
+                                - Perorangan dan keluarga
+                                - Usaha mikro, kecil, dan menengah (UMKM)
+                                - Perusahaan swasta dan korporasi nasional
+                                - Instansi pemerintahan dan BUMDes
+                                - Lembaga pendidikan, yayasan, dan organisasi sosial
 
-                        </p>
-                    </div>
+                            </p>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -275,7 +282,8 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <h1>Get to Know Project Estimate?</h1>
-                    <p style="color: white;">There is a moment in the life of any aspiring astronomer that it is time to buy that first telescope.
+                    <p style="color: white;">There is a moment in the life of any aspiring astronomer that it is time to
+                        buy that first telescope.
                         It’s
                         exciting to think about setting up your own viewing station whether that is on the deck</p>
                     <a href="#" class="primary-btn">Get Free Estimate</a>

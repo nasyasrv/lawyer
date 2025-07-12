@@ -41,10 +41,6 @@ class LawyerController extends Controller
         return view('interface.jurnal');
     }
 
-    public function segment()
-    {
-        return view('interface.segment');
-    }
 
     public function contact()
     {

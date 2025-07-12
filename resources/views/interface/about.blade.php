@@ -59,7 +59,7 @@
             </div>
     </section>
     <!-- about -->
-    <section class="about-area section_gap_top mt-3" id="about">
+    <section class="about-area section_gap_top mt-3 mb-5" id="about">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -108,96 +108,6 @@
                                     <h5>Kepedulian </h5>
                                     <p>
                                         Memahami bahwa hukum harus berpihak kepada yang lemah dan membutuhkan.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end about -->
-    <!-- about -->
-    <section class="about-area section_gap_top mt-3 mb-3" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1 class="text-center">Layanan Hukum Unggulan</h1>
-                    <div class="about-inner">
-                        <div class="row">
-                            <!-- single success -->
-                            <div class="col-lg-4 col-md-3">
-                                <div class="single-success">
-                                    <h5>Litigasi & Penyelesaian Sengketa</h5>
-                                    <p>
-                                        - Perdata: Gugatan wanprestasi, PMH, waris, perdata agraria <br>
-                                        - Pidana: Pendampingan tersangka/terdakwa, eksepsi, pleidoi <br>
-                                        - Tata Usaha Negara: Sengketa administrasi dan kebijakan pemerintah
-
-                                    </p>
-                                </div>
-                            </div>
-                            <!-- single success -->
-                            <div class="col-lg-4 col-md-3">
-                                <div class="single-success">
-                                    <h5>Konsultasi & Pendampingan Hukum Bisnis</h5>
-                                    <p>
-                                        - Legal opinion, kontrak bisnis, merger & akuisisi <br>
-                                        - Pendirian badan usaha, legal compliance, mitigasi risiko
-                                    </p>
-                                </div>
-                            </div>
-                            <!-- single success -->
-                            <div class="col-lg-4 col-md-3">
-                                <div class="single-success">
-                                    <h5>Hukum Keluarga & Waris</h5>
-                                    <p>
-                                        - Cerai gugat/talak, pembagian harta bersama <br>
-                                        - Sengketa waris Islam dan adat, perjanjian pranikah
-                                    </p>
-                                </div>
-                            </div>
-                            <!-- single success -->
-                            <div class="col-lg-4 col-md-3">
-                                <div class="single-success">
-                                    <h5>Hukum Ketenagakerjaan & Hubungan Industrial</h5>
-                                    <p>
-                                        - PHK sepihak, perselisihan hak & kepentingan <br>
-                                        - Penyelesaian bipartit, tripartit, dan litigasi industrial
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-4 col-md-3">
-                                <div class="single-success">
-                                    <h5>Hukum Agraria & Pertanahan</h5>
-                                    <p>
-                                        - Sengketa lahan, pendaftaran tanah, pengurusan sertifikat <br>
-                                        - Advokasi hak atas tanah ulayat dan masyarakat adat
-                                    </p>
-                                </div>
-                            </div>
-                            <!-- single success -->
-                            <div class="col-lg-4 col-md-3">
-                                <div class="single-success">
-                                    <h5>Mediasi & Negosiasi Strategis</h5>
-                                    <p>
-                                        - Penyelesaian sengketa tanpa pengadilan dengan pendekatan win-win <br>
-                                        - Mediasi keluarga, perbankan, usaha, dan property
-                                    </p>
-                                </div>
-                            </div>
-                            <!-- single success -->
-                            <div class="col-lg-4 col-md-3">
-                                <div class="single-success">
-                                    <h5>Surat- menyurat </h5>
-                                    <p>
-                                        - Surat Pelaporan/ Surat Pengaduan <br>
-                                        - Surat Permohonan Klarifikasi <br>
-                                        - Surat Somasi <br>
-                                        - Surat Perjanjian <br>
-                                        - Surat keberatan dan Penolakan <br>
                                     </p>
                                 </div>
                             </div>
