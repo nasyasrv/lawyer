@@ -17,14 +17,18 @@
     <!--================End Home Banner Area =================-->
 
     <!--================Contact Area =================-->
-    <section class="contact_area section_gap">
+    <section class="contact_area ">
         <div class="container">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3946.6745860375327!2d114.331305!3d-8.4335819!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd3fda7e9c9fed5%3A0xdb0214b9aa109fa5!2spengacara%20%2F%20Advokat%20Nurul%20Safi&#39;i%2C%20S.H!5e0!3m2!1sid!2sid!4v1752230759071!5m2!1sid!2sid"
-                width="100%" height="400" style="border:0; margin-bottom:50px;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-            <div class="row">
+            <div class="col-lg-12 mt-4">
+                <img src="{{ asset('interface/img/LOGO_NS_2.png') }}" alt="logo" class="img-fluid"
+                    style="width: 200px; border-radius: 10%; display: block; margin: 20px auto;">
+                <p class="text-center mb-4">
+                    Kami percaya bahwa setiap permasalahan hukum memiliki jalan keluar yang bisa dicapai melalui pendekatan
+                    yang tepat. Bersama Kantor Hukum Nurul Safii & PARTNERS, keadilan bukan hanya tujuan, tapi komitmen yang
+                    kami perjuangkan hingga titik akhir. Hubungi kami hari ini, dan izinkan kami menjadi pembela hak Anda.
+                </p>
+            </div>
+            <div class="row mb-5">
                 <div class="col-lg-4">
                     <div class="contact_info">
                         <div class="info_item">
@@ -39,7 +43,7 @@
                     <div class="contact_info">
                         <div class="info_item">
                             <i class="lnr lnr-phone-handset"></i>
-                            <h6><a href="#">+62 853-3197-9610</a></h6>
+                            <h6><a href="https://wa.link/psypax">+62 853-3197-9610</a></h6>
                         </div>
                     </div>
                 </div>
@@ -55,7 +59,7 @@
                     <div class="contact_info">
                         <div class="info_item">
                             <i class="fab fa-instagram"></i>
-                            <h6><a href="https://instagram.com/nurulsafiilaw" target="_blank">@nurulsafiilaw</a></h6>
+                            <h6><a href="#" target="_blank">@nurulsafiilaw</a></h6>
                         </div>
                     </div>
                 </div>
@@ -64,12 +68,68 @@
                     <div class="contact_info">
                         <div class="info_item">
                             <i class="fab fa-tiktok"></i>
-                            <h6><a href="https://www.tiktok.com/@pengacara_nurul_safii" target="_blank">@pengacara_nurul_safii</a></h6>
+                            <h6><a href="https://www.tiktok.com/@pengacara_nurul_safii"
+                                    target="_blank">@pengacara_nurul_safii</a></h6>
                         </div>
                     </div>
                 </div>
             </div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3946.6745860375327!2d114.331305!3d-8.4335819!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd3fda7e9c9fed5%3A0xdb0214b9aa109fa5!2spengacara%20%2F%20Advokat%20Nurul%20Safi&#39;i%2C%20S.H!5e0!3m2!1sid!2sid!4v1752230759071!5m2!1sid!2sid"
+                width="100%" height="400" style="border:0; margin-bottom:50px;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
 
+
+            <div class="row" id="review-form">
+                <div class="col-lg-12">
+                    <h1 class="text-center mb-4">Berikan Ulasan Anda</h1>
+                    <p class="text-center mb-4">
+                        Kami menghargai masukan Anda. Silakan beri rating dan ulasan tentang layanan kami.
+                    </p>
+                </div>
+
+                <div class="col-lg-12">
+                    <form class="row contact_form" action="{{ route('reviews.store') }}" method="POST" id="reviewForm"
+                        novalidate="novalidate">
+                        @csrf
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="name" name="name"
+                                    placeholder="Nama Anda" onfocus="this.placeholder = ''"
+                                    onblur="this.placeholder = 'Nama Anda'" required>
+                            </div>
+                        </div>
+
+                        <!-- Rating Bintang -->
+                        <div class="col-md-12">
+                            <div class="form-group text-center">
+                                <label for="rating" class="mb-2">Beri Rating:</label><br>
+                                <div class="star-rating">
+                                    @for ($i = 5; $i >= 1; $i--)
+                                        <input type="radio" id="star{{ $i }}" name="rating"
+                                            value="{{ $i }}" required>
+                                        <label for="star{{ $i }}"
+                                            title="{{ $i }} stars">&#9733;</label>
+                                    @endfor
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Ulasan -->
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <textarea class="form-control" name="message" id="message" rows="3" placeholder="Tulis ulasan Anda di sini..."
+                                    onfocus="this.placeholder = ''" onblur="this.placeholder = 'Tulis ulasan Anda di sini...'" required></textarea>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12 text-center">
+                            <button type="submit" class="primary-btn">Kirim Ulasan</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
         </div>
     </section>
     <!--================Contact Area =================-->

@@ -2,13 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\reviews;
 use Illuminate\Http\Request;
 
 class LawyerController extends Controller
 {
     public function welcome()
     {
-        return view('interface.welcome');
+        $reviews = reviews::latest()->get();
+        return view('interface.welcome' , compact('reviews'));
     }
 
     public function about()
@@ -44,6 +46,7 @@ class LawyerController extends Controller
 
     public function contact()
     {
-        return view('interface.contact');
+        $reviews = reviews::latest()->get();
+        return view('interface.contact' , compact('reviews'));
     }
 }

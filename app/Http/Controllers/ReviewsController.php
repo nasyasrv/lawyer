@@ -12,7 +12,8 @@ class ReviewsController extends Controller
      */
     public function index()
     {
-        //
+        $reviews = reviews::latest()->get();
+        return view('admin.rating', compact('reviews'));
     }
 
     /**
@@ -20,7 +21,8 @@ class ReviewsController extends Controller
      */
     public function create()
     {
-        //
+        $reviews = reviews::latest()->get();
+        return view('interface.contact', compact('reviews'));
     }
 
     /**
@@ -28,7 +30,20 @@ class ReviewsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'name' => 'required',
+            'rating' => 'required',
+            'message' => 'required',
+        ]);
+
+        reviews::create([
+            'name' => $request->name,
+            'rating' => $request->rating,
+            'message' => $request->message,
+            'submitted_at' => now(),
+        ]);
+
+        return redirect()->route('reviews.create')->with('success', 'Review submitted successfully!');
     }
 
     /**

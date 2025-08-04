@@ -30,3 +30,4 @@ Route::resource('legal_opini', App\Http\Controllers\LegalOpiniController::class)
 Route::resource('legal_patnership', App\Http\Controllers\LegalPatnershipController::class);
 Route::resource('jurnal', App\Http\Controllers\JurnalController::class);
 Route::resource('galery', App\Http\Controllers\GaleryController::class);
+Route::resource('reviews', App\Http\Controllers\ReviewsController::class);

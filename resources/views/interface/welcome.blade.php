@@ -280,13 +280,57 @@
     <div class="cta-area section_gap overlay">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <h1>Get to Know Project Estimate?</h1>
-                    <p style="color: white;">There is a moment in the life of any aspiring astronomer that it is time to
-                        buy that first telescope.
-                        It’s
-                        exciting to think about setting up your own viewing station whether that is on the deck</p>
-                    <a href="#" class="primary-btn">Get Free Estimate</a>
+                <div class="col-lg-6">
+                    <h1>Berikan Rating dan Ulasan anda</h1>
+                    <p style="color: white;">Kami sangat menghargai pendapat anda</p>
+                    <a href="{{ route('contact') }}" class="primary-btn mb-4">Kirim </a>
+                </div>
+                <div class="col-lg-6">
+                    <div id="review-container" class="rounded shadow-sm border \">
+                        <div class="review-list">
+                            @foreach ($reviews as $review)
+                                <div class="review-item card mb-0">
+                                    <div class="card-body">
+                                        <div class="d-flex flex-column flex-md-row align-items-md-center mb-2">
+                                            <div class="star-rating me-2">
+                                                @for ($i = 0; $i < $review->rating; $i++)
+                                                    ★
+                                                @endfor
+                                                @for ($i = $review->rating; $i < 5; $i++)
+                                                    ☆
+                                                @endfor
+                                            </div>
+                                            <div class="fw-bold">{{ $review->name }}</div>
+                                        </div>
+                                        <p class="mb-1">{{ $review->message }}</p>
+                                        <small class="text-muted mb-2">Dikirim pada:
+                                            {{ $review->created_at->format('d F Y') }}</small>
+                                    </div>
+                                </div>
+                            @endforeach
+                            <div class="review-item card mb-0">
+                                <div class="card-body">
+                                    <div class="d-flex flex-column flex-md-row align-items-md-center mb-2">
+                                        <div class="star-rating me-2">★★★★★</div>
+                                        <div class="fw-bold">Nasya Asriva</div>
+                                    </div>
+                                    <p class="mb-1">Pelayanan sangat ramah dan cepat. Sangat direkomendasikan!</p>
+                                    <small class="text-muted mb-2">Dikirim pada: 10 Juli 2025</small>
+                                </div>
+                            </div>
+
+                            <div class="review-item card mb-0">
+                                <div class="card-body">
+                                    <div class="d-flex flex-column flex-md-row align-items-md-center mb-2">
+                                        <div class="star-rating me-2">★★★★☆</div>
+                                        <div class="fw-bold">Dimas A.</div>
+                                    </div>
+                                    <p class="mb-1">Proses cukup lancar, hanya saja responnya sedikit lambat di awal.</p>
+                                    <small class="text-muted mb-2">Dikirim pada: 5 Juli 2025</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -362,3 +406,19 @@
         </div>
     </section>
     <!--================ End Blog Area =================-->
+
+    @push('script')
+        <script>
+            const list = document.querySelector('.review-list');
+            const items = document.querySelectorAll('.review-item');
+            const itemHeight = items[0].offsetHeight;
+            let index = 0;
+
+            setInterval(() => {
+                index++;
+                if (index >= items.length) index = 0;
+
+                list.style.transform = `translateY(-${index * itemHeight}px)`;
+            }, 4000); // Ganti ulasan setiap 4 detik
+        </script>
+    @endpush

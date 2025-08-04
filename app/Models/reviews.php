@@ -11,9 +11,5 @@ class reviews extends Model
 
     protected $guarded = ['id'];
 
-    protected $fillable = [
-        'name',
-        'rating',
-        'comment',
-    ];
+    protected $fillable = ['name', 'rating', 'message', 'submitted_at'];
 }

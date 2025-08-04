@@ -39,7 +39,15 @@
                  <a href="{{ route('galery.index') }}" class="menu-link">
                      <i class="menu-icon tf-icons ti ti-file"></i>
 
-                     <div data-i18n="Galery">Galery</div>
+                     <div >Galery</div>
+                 </a>
+             </li>
+
+             <li class="menu-item">
+                 <a href="{{ route('reviews.index') }}" class="menu-link">
+                     <i class="menu-icon tf-icons ti ti-file"></i>
+
+                     <div data-i18n="Reviews">Reviews</div>
                  </a>
              </li>
          </ul>
