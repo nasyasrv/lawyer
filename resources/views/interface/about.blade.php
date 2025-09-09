@@ -7,9 +7,9 @@
                 <div class="banner_content text-center">
                     <div class="page_link">
                         <a href="{{ route('welcome') }}">Home</a>
-                        <a href="{{ route('about') }}" style="color:#e2a807">About Us</a>
+                        <a href="{{ route('about') }}" style="color:#e2a807">Tentang Kami</a>
                     </div>
-                    <h2>About Us</h2>
+                    <h2>Tentang Kami</h2>
                 </div>
             </div>
         </div>
@@ -28,7 +28,7 @@
                 </div>
                 <div class="col-lg-6 video-right">
                     <h1>PROFIL KANTOR HUKUM</h1>
-                    <p>Kantor Hukum Nurul Safii, S.H., M.H., C.MSP & PARTNERS adalah Kantor hukum independen yang hadir
+                    <p style="text-align: justify;">Kantor Hukum Nurul Safii, S.H., M.H., C.MSP & PARTNERS adalah Kantor hukum independen yang hadir
                         sebagai representasi integritas, kecermatan, dan keberanian dalam menegakkan keadilan di tengah
                         kompleksitas dinamika hukum. Berdiri di atas nilai-nilai luhur profesi hukum, Kantor Hukum ini
                         didirikan oleh Nurul Safii, S.H., M.H., C.MSP, seorang advokat sekaligus konsultan strategis yang

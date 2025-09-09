@@ -1,27 +1,28 @@
 @extends('interface.layout.app')
 @section('content')
 
-    <!--================ Start Home Banner Area =================-->
+<!--================ Start Home Banner Area =================-->
     <section class="banner_area ">
         <div class="banner_inner overlay d-flex align-items-center">
             <div class="container">
                 <div class="banner_content text-center">
                     <div class="page_link">
                         <a href="{{ route('welcome') }}">Home</a>
-                        <a href="{{ route('article') }}">Artikel Terbaru dari Kami</a>
+                        <a href="{{ route('break-news') }}">Berita Terbaru dari Kami</a>
                     </div>
-                    <h2>Artikel Terbaru dari Kami</h2>
+                    <h2>Berita Terbaru dari Kami</h2>
                 </div>
             </div>
         </div>
     </section>
-    <!--================ End Home Banner Area =================-->
+<!--================ End Home Banner Area =================-->
 
-    <!--================Blog Categorie Area =================-->
-    <section class="blog_categorie_area">
-        <div class="container">
-            <div class="row justify-content-center">
-                @forelse($articles as $row)
+<!--================Blog Categorie Area =================-->
+<section class="blog_categorie_area">
+    <div class="container">
+        <div class="row justify-content-center">
+            <!-- single-blog -->
+            @forelse($news as $row)
                     <div class="col-lg-4 col-md-4 col-sm-6">
                         <div class="single-blog">
                             <div>
@@ -40,7 +41,7 @@
                 @empty
                     <h4>Kami belum memiliki berita</h4>
                 @endforelse
-            </div>
         </div>
-    </section>
-    <!--================Blog Categorie Area =================-->
+    </div>
+</section>
+<!--================Blog Categorie Area =================-->

@@ -4,10 +4,14 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" href="{{ asset('interface/img/favicon.png') }}" type="image/png">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <!-- Favicon -->
+    <link rel="icon" href="{{ asset('interface/img/LOGO_NS_2.png') }}" type="image/png" sizes="32x32">
+    <link rel="apple-touch-icon" href="{{ asset('interface/img/LOGO_NS_2.png') }}">
+    <link rel="shortcut icon" href="{{ asset('interface/img/LOGO_NS_2.png') }}" type="image/png">
+
     <title>LAWFUL LAWFIRM</title>
-    <link rel="stylesheet" href="{{ asset('interface/css/style.css') }}">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{{ asset('interface/css/bootstrap.css') }}">
     <link rel="stylesheet" href="{{ asset('interface/vendors/linericon/style.css') }}">
@@ -18,11 +22,16 @@
     <link rel="stylesheet" href="{{ asset('interface/vendors/nice-select/css/nice-select.css') }}">
     <link rel="stylesheet" href="{{ asset('interface/vendors/animate-css/animate.css') }}">
     <!-- main css -->
+    <link rel="stylesheet" href="{{ asset('interface/css/style.css') }}">
 </head>
 
 <body>
     <x-loader />
-    @include('interface.layout.header')
+    <header class="header_area">
+        <div class="main_menu">
+            @include('interface.layout.navbar')
+        </div>
+    </header>
     @yield('content')
     @stack('content')
     @include('interface.layout.footer')

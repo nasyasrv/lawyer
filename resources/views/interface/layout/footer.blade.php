@@ -5,8 +5,12 @@
             <div class="row">
                 <div class="col-lg-8 col-md-6 col-sm-6">
                     <div class="single-footer-widget">
+                        <img src="{{ asset('interface/img/LOGO_NS_2.png') }}" alt="logo" class="img-fluid"
+                            style="max-width:80px; height:auto; margin-top: -105px;">
+
                         <h5 class="footer_title">About Us</h5>
-                        <p class="about-text">Kantor Hukum Nurul Safii, S.H., M.H., C.MSP & PARTNERS adalah Kantor hukum
+                        <p class="about-text" style="text-align: justify;">Kantor Hukum Nurul Safii, S.H., M.H., C.MSP &
+                            PARTNERS adalah Kantor hukum
                             independen yang hadir
                             sebagai representasi integritas, kecermatan, dan keberanian dalam menegakkan keadilan di
                             tengah
@@ -22,7 +26,7 @@
                             bermartabat. Dengan pendekatan yang sistematis, berbasis riset, dan berorientasi pada hasil,
                             kami
                             meyakini bahwa keadilan bukan hanya untuk dicari tetapi untuk diperjuangkan dengan
-                            kehormatan./p>
+                            kehormatan.
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6">
@@ -31,18 +35,19 @@
                         <div class="row">
                             <div class="col-5">
                                 <ul class="list">
-                                    <li><a href="{{ route('welcome')}}">Home</a></li>
-                                    <li><a href="{{ route('about')}}">About Us</a></li>
+                                    <li><a href="{{ route('welcome') }}">Home</a></li>
+                                    <li><a href="{{ route('about') }}">About Us</a></li>
                                     <li><a href="{{ route('service') }}">Service</a></li>
                                     <li><a href="{{ route('contact') }}">Kotak</a></li>
                                 </ul>
                             </div>
                             <div class="col-5">
                                 <ul class="list">
-                                    <li><a href="{{ route('partner')}}">Legal Patnership</a></li>
+                                    <li><a href="{{ route('partner') }}">Legal Patnership</a></li>
                                     <li><a href="{{ route('picture') }}">Galery</a></li>
                                     <li><a href="{{ route('article') }}">Legal Opini</a></li>
                                     <li><a href="{{ route('file') }}">Jurnal</a></li>
+                                    <li><a href="{{ route('file') }}">Berita</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -56,7 +61,7 @@
             <div class="row">
                 <div class="col-lg-6 col-md-12">
                     <p>
-                        | This template is made by NS_team
+                        | design made by pplg-smemsa
                     </p>
                 </div>
                 <div class="col-lg-6 col-md-12 text-right">

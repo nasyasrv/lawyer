@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class legal_opiniCreateRequest extends FormRequest
+class newsUpdateRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -31,11 +31,6 @@ class legal_opiniCreateRequest extends FormRequest
         ];
     }
 
-    /**
-     * Get custom messages for validator errors.
-     *
-     * @return array<string, string>
-     */
     public function messages(): array
     {
         return [
@@ -43,7 +38,7 @@ class legal_opiniCreateRequest extends FormRequest
             'publisher.required' => 'Nama penerbit harus diisi.',
             'author.required' => 'Nama penulis harus diisi.',
             'date_publish.required' => 'Tanggal terbit harus diisi.',
-            'url.required' => 'Konten harus diisi.',
+            'url.required' => 'url harus diisi.',
             'picture.image' => 'File yang diunggah harus berupa gambar.',
             'picture.mimes' => 'Gambar harus dalam format jpeg, png, jpg, gif, atau svg.',
             'picture.max' => 'Ukuran gambar tidak boleh lebih dari 2MB.',

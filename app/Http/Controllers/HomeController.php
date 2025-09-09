@@ -3,6 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\reviews;
+use App\Models\jurnal;
+use App\Models\legal_opini;
+use App\Models\news;
+use App\Models\legal_patnership;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -25,6 +29,10 @@ class HomeController extends Controller
     public function index()
     {
         $reviews = reviews::latest()->get();
-        return view('admin.home' , compact('reviews'));
+        $jurnals = jurnal::count();
+        $opinies = legal_opini::count();
+        $news = news::count();
+        $patners = legal_patnership::count();
+        return view('admin.home' , compact('reviews', 'jurnals', 'opinies', 'news', 'patners'));
     }
 }

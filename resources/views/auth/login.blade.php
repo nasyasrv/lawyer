@@ -1,10 +1,10 @@
 @extends('auth.layouts.app')
 @section('contents')
         <!-- Login -->
-        <div class="d-flex col-12 col-lg-4 align-items-center authentication-bg p-sm-12 p-6">
+        <div class="d-flex col-12 col-lg-4 align-items-center authentication-bg-dark p-sm-12 p-6">
           <div class="w-px-400 mx-auto mt-12 pt-5">
-            <h4 class="mb-1">Welcome to Vuexy! 👋</h4>
-            <p class="mb-6">Please sign-in to your account and start the adventure</p>
+            <h4 class="mb-1">Selamat Datang Admin</h4>
+            <p class="mb-6">Mohon login untuk masuk kedalam mode admin</p>
 
             <form id="formAuthentication" class="mb-6" action="{{ route('login') }}" method="POST" onsubmit="document.getElementById('loading-screen').style.display = 'flex';">
                 @csrf

@@ -13,7 +13,7 @@ class ReviewsController extends Controller
     public function index()
     {
         $reviews = reviews::latest()->get();
-        return view('admin.rating', compact('reviews'));
+        return view('admin.home', compact('reviews'));
     }
 
     /**
@@ -33,7 +33,12 @@ class ReviewsController extends Controller
         $request->validate([
             'name' => 'required',
             'rating' => 'required',
-            'message' => 'required',
+            'message' => 'required|max:200',
+        ],[
+            'name.required' => 'nama wajib diisi',
+            'rating.required' => 'rating minimal 1',
+            'message.required' => 'pesan ulasan wajib diisi',
+            'message.max' => 'ulasan maksimal 200 karakter'
         ]);
 
         reviews::create([

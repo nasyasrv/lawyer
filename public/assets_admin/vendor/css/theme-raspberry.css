@@ -1327,8 +1327,8 @@ li.ui-timepicker-selected,
 }
 
 .bg-navbar-theme {
-  background-color: rgba(255, 255, 255, 0.88) !important;
-  color: #444050;
+  background-color: rgba(0, 0, 0, 0.9) !important; /* Hitam hampir solid */
+  color: #ffffff;
 }
 .bg-navbar-theme .navbar-brand,
 .bg-navbar-theme .navbar-brand a {

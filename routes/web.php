@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\NewsController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -24,6 +25,9 @@ Route::get('/picture', [App\Http\Controllers\LawyerController::class, 'picture']
 Route::get('/article', [App\Http\Controllers\LawyerController::class, 'article'])->name('article');
 Route::get('/file', [App\Http\Controllers\LawyerController::class, 'file'])->name('file');
 Route::get('/contact', [App\Http\Controllers\LawyerController::class, 'contact'])->name('contact');
+Route::get('/break-news', [App\Http\Controllers\LawyerController::class, 'news'])->name('break-news');
+
+Route::get('/download-pdf/{id}', [App\Http\Controllers\LawyerController::class, 'downloadJurnal'])->name('download-pdf');
 
 
 Route::resource('legal_opini', App\Http\Controllers\LegalOpiniController::class);
@@ -31,3 +35,4 @@ Route::resource('legal_patnership', App\Http\Controllers\LegalPatnershipControll
 Route::resource('jurnal', App\Http\Controllers\JurnalController::class);
 Route::resource('galery', App\Http\Controllers\GaleryController::class);
 Route::resource('reviews', App\Http\Controllers\ReviewsController::class);
+Route::resource('news', NewsController::class);

@@ -8,12 +8,12 @@
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-    <title>Dashboard - Analytics | Vuexy - Bootstrap Admin Template</title>
+    <title>Dashboard Admin Lawyer</title>
 
     <meta name="description" content="" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="{{ asset('assets_admin/img/favicon/favicon.ico') }}" />
+    <link rel="icon" href="{{ asset('interface/img/LOGO_NS_2.png') }}" type="image/png">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -30,7 +30,7 @@
     <!-- Core CSS -->
 
     <link rel="stylesheet" href="{{ asset('assets_admin/vendor/css/rtl/core.css') }}" />
-    <link rel="stylesheet" href="{{ asset('assets_admin/vendor/css/rtl/theme-default.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets_admin/vendor/css/rtl/theme-raspberry.css') }}" />
 
     <link rel="stylesheet" href="{{ asset('assets_admin/css/demo.css') }}" />
 

@@ -6,12 +6,11 @@
             <div class="container">
                 <div class="row fullscreen d-flex align-items-center justify-content-center">
                     <div class="banner_content">
-                        <h2 class="mt-4">
-                            KANTOR HUKUM NURUL SAFII, S.H., M.H., C.MSP <br> & PARTNERS ADVOKAT – MEDIATOR – <br> KUNSULTAN
-                            HUKUM
-                        </h2>
+                        <h2 style="font-family: 'Poppins', sans-serif;margin-bottom: -20px;"> KANTOR HUKUM </h2> <br>
+                        <h2 style="font-family: 'Poppins', sans-serif;">NURUL SAFII, S.H., M.H., C.MSP  & PARTNERS</h2> <br>
+                        <h3 style="font-family: 'Poppins', sans-serif;color: #fff;">ADVOKAT – MEDIATOR –  KUNSULTAN HUKUM</h3>
                         <h5 class="mb-4"
-                            style="text-align: center; font-size: 20px; color: #fff; margin-top: 30px; margin-bottom: 20px; font-family: 'Poppins', sans-serif;">
+                            style="text-align: center; font-size: 20px; color: #fff; margin-top: 30px; margin-bottom: 20px; font-family: 'Times New Roman', Georgia, serif; font-style: italic;">
                             "Solusi Hukum Terpercaya, Solusi Tepat Untuk Anda"
                         </h5>
                     </div>
@@ -33,7 +32,7 @@
                 </div>
                 <div class="col-lg-6 video-right">
                     <h1>PROFIL KANTOR HUKUM</h1>
-                    <p>Kantor Hukum Nurul Safii, S.H., M.H., C.MSP & PARTNERS adalah Kantor hukum independen yang hadir
+                    <p style="text-align: justify;">Kantor Hukum Nurul Safii, S.H., M.H., C.MSP & PARTNERS adalah Kantor hukum independen yang hadir
                         sebagai representasi integritas, kecermatan, dan keberanian dalam menegakkan keadilan di tengah
                         kompleksitas dinamika hukum.
                         Berdiri di atas nilai-nilai luhur profesi hukum, Kantor Hukum ini didirikan oleh Nurul Safii, S.H.,
@@ -215,62 +214,32 @@
                 <div class="col-lg-7">
                     <div class="main_title">
                         <h2>Legal Partnership</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor incididunt labore
-                            dolore magna
-                            aliqua enim minim veniam quis nostrud.</p>
+                        <p>Berikut merupakan tim sukses kami</p>
                     </div>
                 </div>
             </div>
             <div class="row justify-content-center">
-                <!-- single-team-member -->
-                <div class="col-lg-4 col-md-4 col-sm-6 mt-5">
-                    <div class="single_member">
-                        <div class="author">
-                            <img class="img-fluid" src="{{ asset('interface/img/team/team1.jpg') }}" alt="">
-                        </div>
-                        <div class="author_decs">
-                            <h5>Nurul Safii, S.H., M.H., C.Msp</h5>
-                            <p> <strong>Pendiri & Managing Partner</strong></p>
-                            <p style="white-space: pre-line;">
-                                - Advokat Dan Konsultan Hukum
-                                - Magister Hukum (Konsentrasi Hukum Bisnis)
-                                - C.Msp (Certified Mediation Skill Practitioner )
-                                - Pengacara Ketenagakerjaan Bersertifikat
-                                - Praktisi Dan Edukator Hukum, Pembicara Seminar Hukum
-                                - Penggagas Layanan Hukum Digital Berbasis Edukasi & Advokasi Public
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- single-team-member -->
-                <div class="col-lg-4 col-md-4 col-sm-6 mt-5">
-                    <div class="single_member">
-                        <div class="author">
-                            <img class="img-fluid" src="{{ asset('interface/img/team/team2.jpg') }}" alt="">
-                        </div>
-                        <div class="author_decs">
-                            <h5>Ethel Davis</h5>
-                            <p class="profession">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                                in reprehenderit.</p>
+                @forelse ($patners as $row)
+                    <div class="col-lg-4 col-md-4 col-sm-6 mb-4">
+                        <div class="single-blog">
+                            <div style=" width: 100%; height: 500px;">
+                                <img class="img-fluid" src="{{ asset('storage/' . $row->photo) }}"
+                                    alt="{{ $row->name }}" >
+                            </div>
+                            <div class="blog-details">
+                                <div class="blog-meta">
+                                    <span>{{ $row->name }}</span>
+                                </div>
+                                <h5><strong>{{ $row->position }}</strong></h5>
+                                <p class="text-wrap text-break" style="white-space: pre-line;">
+                                    {{ $row->description }}
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 mt-5">
-                    <div class="single_member">
-                        <div class="author">
-                            <img class="img-fluid" src="{{ asset('interface/img/team/team3.jpg') }}" alt="">
-                        </div>
-                        <div class="author_decs">
-                            <h5>Ethel Davis</h5>
-                            <p class="profession">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                                in reprehenderit.</p>
-                        </div>
-                    </div>
-                </div>
+                @empty
+                    <h4>Kami belum memiliki Partner</h4>
+                @endforelse
             </div>
         </div>
     </section>
@@ -286,54 +255,55 @@
                     <a href="{{ route('contact') }}" class="primary-btn mb-4">Kirim </a>
                 </div>
                 <div class="col-lg-6">
-                    <div id="review-container" class="rounded shadow-sm border \">
+                    <div id="review-container"
+                        class="rounded shadow-sm border \">
                         <div class="review-list">
-                            @foreach ($reviews as $review)
-                                <div class="review-item card mb-0">
-                                    <div class="card-body">
-                                        <div class="d-flex flex-column flex-md-row align-items-md-center mb-2">
-                                            <div class="star-rating me-2">
-                                                @for ($i = 0; $i < $review->rating; $i++)
-                                                    ★
-                                                @endfor
-                                                @for ($i = $review->rating; $i < 5; $i++)
-                                                    ☆
-                                                @endfor
-                                            </div>
-                                            <div class="fw-bold">{{ $review->name }}</div>
-                                        </div>
-                                        <p class="mb-1">{{ $review->message }}</p>
-                                        <small class="text-muted mb-2">Dikirim pada:
-                                            {{ $review->created_at->format('d F Y') }}</small>
-                                    </div>
-                                </div>
-                            @endforeach
+                        @foreach ($reviews as $review)
                             <div class="review-item card mb-0">
                                 <div class="card-body">
                                     <div class="d-flex flex-column flex-md-row align-items-md-center mb-2">
-                                        <div class="star-rating me-2">★★★★★</div>
-                                        <div class="fw-bold">Nasya Asriva</div>
+                                        <div class="star-rating me-2">
+                                            @for ($i = 0; $i < $review->rating; $i++)
+                                                ★
+                                            @endfor
+                                            @for ($i = $review->rating; $i < 5; $i++)
+                                                ☆
+                                            @endfor
+                                        </div>
+                                        <div class="fw-bold">{{ $review->name }}</div>
                                     </div>
-                                    <p class="mb-1">Pelayanan sangat ramah dan cepat. Sangat direkomendasikan!</p>
-                                    <small class="text-muted mb-2">Dikirim pada: 10 Juli 2025</small>
+                                    <p class="mb-1">{{ $review->message }}</p>
+                                    <small class="text-muted mb-2">Dikirim pada:
+                                        {{ $review->created_at->format('d F Y') }}</small>
                                 </div>
                             </div>
-
-                            <div class="review-item card mb-0">
-                                <div class="card-body">
-                                    <div class="d-flex flex-column flex-md-row align-items-md-center mb-2">
-                                        <div class="star-rating me-2">★★★★☆</div>
-                                        <div class="fw-bold">Dimas A.</div>
-                                    </div>
-                                    <p class="mb-1">Proses cukup lancar, hanya saja responnya sedikit lambat di awal.</p>
-                                    <small class="text-muted mb-2">Dikirim pada: 5 Juli 2025</small>
+                        @endforeach
+                        <div class="review-item card mb-0">
+                            <div class="card-body">
+                                <div class="d-flex flex-column flex-md-row align-items-md-center mb-2">
+                                    <div class="star-rating me-2">★★★★★</div>
+                                    <div class="fw-bold">Nasya Asriva</div>
                                 </div>
+                                <p class="mb-1">Pelayanan sangat ramah dan cepat. Sangat direkomendasikan!</p>
+                                <small class="text-muted mb-2">Dikirim pada: 10 Juli 2025</small>
+                            </div>
+                        </div>
+
+                        <div class="review-item card mb-0">
+                            <div class="card-body">
+                                <div class="d-flex flex-column flex-md-row align-items-md-center mb-2">
+                                    <div class="star-rating me-2">★★★★☆</div>
+                                    <div class="fw-bold">Dimas A.</div>
+                                </div>
+                                <p class="mb-1">Proses cukup lancar, hanya saja responnya sedikit lambat di awal.</p>
+                                <small class="text-muted mb-2">Dikirim pada: 5 Juli 2025</small>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
     <!--================ End CTA Area =================-->
 
@@ -349,59 +319,24 @@
             </div>
             <div class="row justify-content-center">
                 <!-- single-blog -->
+                @forelse($news as $row)
                 <div class="col-lg-4 col-md-4 col-sm-6">
                     <div class="single-blog">
-                        <div class="blog-thumb">
-                            <img class="img-fluid" src="{{ asset('interface/img/blog/h-blog1.jpg') }}" alt="">
+                        <div>
+                             <img src="{{ asset('storage/' . $row->picture) }}" alt="Gambar {{ $row->name }}"
+                                        class="img-fluid" >
                         </div>
                         <div class="blog-details">
                             <div class="blog-meta">
-                                <span>25 june, 2018 | By Mark Wiens</span>
+                                <span>{{ \Carbon\Carbon::parse($row->date_publish)->format('d F Y') }} | {{ $row->author }}</span>
                             </div>
-                            <h5><a href="#">Addiction When Gambling <br>
-                                    Becomes A Problem</a></h5>
-                            <p>Computers have become ubiquitous in almost every facet of our lives. At work, desk jockeys
-                                spend hours in
-                                front of their desktops.</p>
+                            <h5><a href="{{ $row->url }}">{{$row->title}}</a></h5>
                         </div>
                     </div>
                 </div>
-                <!-- single-blog -->
-                <div class="col-lg-4 col-md-4 col-sm-6">
-                    <div class="single-blog">
-                        <div class="blog-thumb">
-                            <img class="img-fluid" src="{{ asset('interface/img/blog/h-blog2.jpg') }}" alt="">
-                        </div>
-                        <div class="blog-details">
-                            <div class="blog-meta">
-                                <span>25 june, 2018 | By Mark Wiens</span>
-                            </div>
-                            <h5><a href="#">Addiction When Gambling <br>
-                                    Becomes A Problem</a></h5>
-                            <p>Computers have become ubiquitous in almost every facet of our lives. At work, desk jockeys
-                                spend hours in
-                                front of their desktops.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- single-blog -->
-                <div class="col-lg-4 col-md-4 col-sm-6">
-                    <div class="single-blog">
-                        <div class="blog-thumb">
-                            <img class="img-fluid" src="{{ asset('interface/img/blog/h-blog3.jpg') }}" alt="">
-                        </div>
-                        <div class="blog-details">
-                            <div class="blog-meta">
-                                <span>25 june, 2018 | By Mark Wiens</span>
-                            </div>
-                            <h5><a href="#">Addiction When Gambling <br>
-                                    Becomes A Problem</a></h5>
-                            <p>Computers have become ubiquitous in almost every facet of our lives. At work, desk jockeys
-                                spend hours in
-                                front of their desktops.</p>
-                        </div>
-                    </div>
-                </div>
+                @empty
+                <h4>Kami belum memiliki berita</h4>
+                @endforelse
             </div>
         </div>
     </section>

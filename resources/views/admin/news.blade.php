@@ -24,7 +24,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        @forelse ($legal_opinis as $row)
+                        @forelse ($news as $row)
                             <tr>
                                 <td>
                                     {{ $row->title }}
@@ -101,7 +101,7 @@
                     <div class="text-center mb-6">
                         <h4 class="mb-2">Tambah Artikel</h4>
                     </div>
-                    <form class="row g-6" method="POST" action="{{ route('legal_opini.store') }}"
+                    <form class="row g-6" method="POST" action="{{ route('news.store') }}"
                         enctype="multipart/form-data" id="formArticle"
                         onsubmit="document.getElementById('loading-screen').style.display = 'flex';">
                         @csrf
@@ -179,7 +179,7 @@
         </div>
     </div>
 
-    @foreach ($legal_opinis as $data)
+    @foreach ($news as $data)
         <!-- Edit Artikel Modal -->
         <div class="modal fade" id="editArtikel{{ $data->id }}" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog modal-lg modal-simple modal-edit-user">
@@ -189,7 +189,7 @@
                         <div class="text-center mb-6">
                             <h4 class="mb-2">Edit Artikel</h4>
                         </div>
-                        <form class="row g-6" method="POST" action="{{ route('legal_opini.update', $data->id) }}"
+                        <form class="row g-6" method="POST" action="{{ route('news.update', $data->id) }}"
                             enctype="multipart/form-data" id="formArticleEdit{{ $data->id }}"
                             onsubmit="document.getElementById('loading-screen').style.display = 'flex';">
                             @method('PUT')
@@ -277,7 +277,7 @@
 
 @push('scripts')
     <script>
-        window.legalOpinis = @json($legal_opinis);
+        window.legalOpinis = @json($news);
     </script>
 
     <script>

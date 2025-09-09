@@ -8,9 +8,9 @@
             <div class="banner_content text-center">
                 <div class="page_link">
                     <a href="{{route('welcome')}}">Home</a>
-                    <a href="{{ route('service') }}">Service</a>
+                    <a href="{{ route('service') }}">Layanan Kami</a>
                 </div>
-                <h2>Our Services</h2>
+                <h2>Layanan Kami</h2>
             </div>
         </div>
     </div>
@@ -95,7 +95,7 @@
             <!-- single service -->
             <div class="col-lg-4 col-md-4 col-sm-6">
                 <div class="single-service">
-                    <div class="service-thumb">
+                    <div>
                         <img class="img-fluid" src="{{ asset('interface/img/1.jpg') }}" alt="">
                     </div>
                     <div class="service-details">
@@ -112,7 +112,7 @@
             <!-- single service -->
             <div class="col-lg-4 col-md-4 col-sm-6">
                 <div class="single-service">
-                    <div class="service-thumb">
+                    <div>
                         <img class="img-fluid" src="{{ asset('interface/img/2.jpg') }}" alt="">
                     </div>
                     <div class="service-details">
@@ -127,7 +127,7 @@
             <!-- single service -->
             <div class="col-lg-4 col-md-4 col-sm-6">
                 <div class="single-service">
-                    <div class="service-thumb">
+                    <div>
                         <img class="img-fluid" src="{{ asset('interface/img/3.jpg') }}" alt="">
                     </div>
                     <div class="service-details">
@@ -142,7 +142,7 @@
 
             <div class="col-lg-4 col-md-4 col-sm-6">
                 <div class="single-service">
-                    <div class="service-thumb">
+                    <div>
                         <img class="img-fluid" src="{{ asset('interface/img/4.jpg') }}" alt="">
                     </div>
                     <div class="service-details">
@@ -157,7 +157,7 @@
 
             <div class="col-lg-4 col-md-4 col-sm-6">
                 <div class="single-service">
-                    <div class="service-thumb">
+                    <div>
                         <img class="img-fluid" src="{{ asset('interface/img/8.jpg') }}" alt="">
                     </div>
                     <div class="service-details">
@@ -172,7 +172,7 @@
 
             <div class="col-lg-4 col-md-4 col-sm-6">
                 <div class="single-service">
-                    <div class="service-thumb">
+                    <div>
                         <img class="img-fluid" src="{{ asset('interface/img/6.jpg') }}" alt="">
                     </div>
                     <div class="service-details">
@@ -187,7 +187,7 @@
 
             <div class="col-lg-4 col-md-4 col-sm-6">
                 <div class="single-service">
-                    <div class="service-thumb">
+                    <div>
                         <img class="img-fluid" src="{{ asset('interface/img/7.jpg') }}" alt="">
                     </div>
                     <div class="service-details">

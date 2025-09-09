@@ -94,9 +94,12 @@
                         @csrf
                         <div class="col-md-12">
                             <div class="form-group">
-                                <input type="text" class="form-control" id="name" name="name"
+                                <input type="text" class="form-control @error('name') is-invalid @enderror" id="name" name="name"
                                     placeholder="Nama Anda" onfocus="this.placeholder = ''"
                                     onblur="this.placeholder = 'Nama Anda'" required>
+                                @error('name')
+                                    <div class="invalid-feedback" role="alert">{{ $message }}</div>
+                                @enderror
                             </div>
                         </div>
 
@@ -112,14 +115,20 @@
                                             title="{{ $i }} stars">&#9733;</label>
                                     @endfor
                                 </div>
+                                @error('rating')
+                                    <div class="invalid-feedback" role="alert">{{ $message }}</div>
+                                @enderror
                             </div>
                         </div>
 
                         <!-- Ulasan -->
                         <div class="col-md-12">
                             <div class="form-group">
-                                <textarea class="form-control" name="message" id="message" rows="3" placeholder="Tulis ulasan Anda di sini..."
+                                <textarea class="form-control @error('message') is-invalid @enderror" name="message" id="message" rows="3" placeholder="Tulis ulasan Anda di sini..."
                                     onfocus="this.placeholder = ''" onblur="this.placeholder = 'Tulis ulasan Anda di sini...'" required></textarea>
+                                @error('message')
+                                    <div class="invalid-feedback" role="alert">{{ $message }}</div>
+                            @enderror
                             </div>
                         </div>
 

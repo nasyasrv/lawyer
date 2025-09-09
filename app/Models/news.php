@@ -5,11 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class legal_opini extends Model
+class news extends Model
 {
     use HasFactory;
 
-    protected $guarded = [
+     protected $guarded = [
         'id', 'created_at', 'updated_at'
     ];
 
