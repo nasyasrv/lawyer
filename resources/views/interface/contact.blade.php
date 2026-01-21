@@ -142,3 +142,4 @@
         </div>
     </section>
     <!--================Contact Area =================-->
+@endsection

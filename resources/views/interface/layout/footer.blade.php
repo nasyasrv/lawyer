@@ -1,12 +1,12 @@
 <!--================  start footer Area =================-->
 <footer class="footer-area">
-    <div class="footer_top section_gap_top">
+    <div class="footer_top">
         <div class="container">
+            <img src="{{ asset('interface/img/LOGO_NS_2.png') }}" alt="logo" class="img-fluid mt-4"
+                            style="max-width:80px; height:auto;">
             <div class="row">
                 <div class="col-lg-8 col-md-6 col-sm-6">
                     <div class="single-footer-widget">
-                        <img src="{{ asset('interface/img/LOGO_NS_2.png') }}" alt="logo" class="img-fluid"
-                            style="max-width:80px; height:auto; margin-top: -105px;">
 
                         <h5 class="footer_title">About Us</h5>
                         <p class="about-text" style="text-align: justify;">Kantor Hukum Nurul Safii, S.H., M.H., C.MSP &

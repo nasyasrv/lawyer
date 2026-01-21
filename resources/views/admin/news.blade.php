@@ -57,7 +57,7 @@
                                                     class="ti ti-pencil me-1"></i> Edit</a>
 
 
-                                            <form action="{{ route('legal_opini.destroy', $row->id) }}" method="POST"
+                                            <form action="{{ route('news.destroy', $row->id) }}" method="POST"
                                                 class="form-delete">
                                                 @csrf
                                                 @method('DELETE')

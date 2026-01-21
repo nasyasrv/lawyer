@@ -49,7 +49,7 @@
                                                 data-bs-target="#editArtikel{{ $row->id }}"><i class="ti ti-pencil me-1"></i> Edit</a>
 
 
-                                            <form action="{{ route('jurnal.destroy', $row->id) }}" method="POST"
+                                            <form action="{{ route('legal_patnership.destroy', $row->id) }}" method="POST"
                                                 class="form-delete">
                                                 @csrf
                                                 @method('DELETE')

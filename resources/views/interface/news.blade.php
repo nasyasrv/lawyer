@@ -45,3 +45,4 @@
     </div>
 </section>
 <!--================Blog Categorie Area =================-->
+@endsection

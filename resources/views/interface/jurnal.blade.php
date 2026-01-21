@@ -62,3 +62,4 @@
         </div>
     </div>
     <!-- End Align Area -->
+@endsection

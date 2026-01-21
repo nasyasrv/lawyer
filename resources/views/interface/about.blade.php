@@ -118,3 +118,4 @@
         </div>
     </section>
     <!-- end about -->
+@endsection
